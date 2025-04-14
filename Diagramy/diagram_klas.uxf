@@ -1,0 +1,12 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>20</x><y>90</y><w>190</w><h>140</h></coordinates><panel_attributes>Klient
+--
+- imie: STRING
+- nazwisko: STRING
+- numerKarty
+- PIN
+- weryfikacja_hasla()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>90</y><w>180</w><h>140</h></coordinates><panel_attributes>Konto
+--
+- numer_konta
+- srodki
+- stworz_transakcje()
+- </panel_attributes><additional_attributes></additional_attributes></element></diagram>
