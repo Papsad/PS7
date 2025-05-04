@@ -1,0 +1,44 @@
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>216</y><w>114</w><h>84</h></coordinates><panel_attributes>Klient
+--
+- imie: STRING
+- nazwisko: STRING
+- numerKarty: INT
+- PIN: INT
+- adres_zamieszkania: STRING
+--
+- weryfikacja_hasla()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>366</y><w>108</w><h>84</h></coordinates><panel_attributes>Konto
+--
+- numer_konta: INT
+- srodki: INT
+--
+- stworz_transakcje()
+- wyplac_gotowke()
+- wplac_gotowke()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>294</x><y>174</y><w>108</w><h>84</h></coordinates><panel_attributes>ATM
+--
+- numer_bankomatu: INT
+- nalezy_do: STRING
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>360</x><y>384</y><w>108</w><h>84</h></coordinates><panel_attributes>Transakcje ATM
+--
+- id_transakcji: INT
+- data: DATE
+- typ: INT
+- ilosc: INT
+- stan_konta: INT
+--
+- modyfikacja_danych()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>144</x><y>90</y><w>108</w><h>84</h></coordinates><panel_attributes>Bank
+--
+- kod_banku: INT
+- adres_banku: STRING
+--
+- zarzadzanie()
+- utrzymanie()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>594</y><w>108</w><h>84</h></coordinates><panel_attributes>Konto Oszczędnościowe
+--
+- numer_konta: INT
+- stan_konta: INT</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>594</y><w>108</w><h>84</h></coordinates><panel_attributes>Wybrane Konto
+--
+- numer_konta: INT
+- stan_konta: INT
+--
+- wyplac_gotowke()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>246</x><y>120</y><w>114</w><h>66</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;170;10;170;90</additional_attributes></element><element><id>Relation</id><coordinates><x>138</x><y>210</y><w>168</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>260;10;120;10;120;80;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>192</x><y>168</y><w>24</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;300;20;300;20;330</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>630</y><w>180</w><h>30</h></coordinates><panel_attributes>
+</panel_attributes><additional_attributes>10;20;280;20</additional_attributes></element><element><id>Relation</id><coordinates><x>108</x><y>522</y><w>288</w><h>84</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;120;10;20;460;20;460;120</additional_attributes></element><element><id>Relation</id><coordinates><x>198</x><y>444</y><w>66</w><h>102</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70;90;70;90;150</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>396</y><w>120</w><h>42</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;20;120;20;120;50;180;50</additional_attributes></element><element><id>Relation</id><coordinates><x>78</x><y>294</y><w>84</w><h>126</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;190;120;190</additional_attributes></element></diagram>
